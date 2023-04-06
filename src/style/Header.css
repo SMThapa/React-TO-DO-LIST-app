@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8%;
+}
+
+.nav ul li{
+    display: inline-block;
+    padding: 10px;
+}

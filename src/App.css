@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
+
+html{
+    font-family: "Raleway";
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#body{
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 15px;
+    width: 85vw;
+    height: 20vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input{
+    height: 6vh;
+    width: 60vw;
+    padding-left: 12px;
+    font-size: 16px;
+}
+button{
+    height: 5vh;
+    width: 8vw;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
 }
 
-.App-link {
-  color: #61dafb;
+
+.btn-submit{
+    cursor: pointer;
+    background-color: #a3b18a;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.outputDiv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 90vw;
+    min-height: 30vh;
+    margin: 5% 0;
+    padding-top: 8%;
+}
+.btn-clearList{
+    cursor: pointer;
+    background-color: #bc4749;
+    border-radius: 11px;
+    color: white;
+}
+
+.topsection{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.count{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding:3px 9px;
+    border-radius: 50px;
+}
+
+.card-items li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15vh;
+    width: 70vw;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 10px 0;
+}
+
+.card-items li p{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.task{
+    font-size: 24px;
+}
+
+.time{
+    padding-top: 8px;
 }
