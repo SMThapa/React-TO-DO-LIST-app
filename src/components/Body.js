@@ -19,7 +19,7 @@ export const Body = ({taskList, setTaskList, task, setTask}) => {
     if(task.id){
       const date = new Date();
       const updatedTask = taskList.map((elm) =>(
-        elm.id === task.id ? {id:task.id, name:task.name, date: `${date.toLocaleTimeString()}  ${date.toLocaleDateString()}`}: elm
+        elm.id === task.id ? {id:task.id, name:task.name, date: `${date.toLocaleTimeString()}`}: elm
       ))
       setTaskList(updatedTask)
       setTask({})
@@ -28,7 +28,7 @@ export const Body = ({taskList, setTaskList, task, setTask}) => {
       const newTask = {
         id: date,
         name: e.target.task.value,
-        date: `${date.toLocaleTimeString()} ${date.toLocaleDateString()}`
+        date: `${date.toLocaleTimeString()}`
       }
       
       console.log(newTask)
