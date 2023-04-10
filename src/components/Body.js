@@ -60,7 +60,7 @@ export const Body = ({taskList, setTaskList, task, setTask}) => {
                 <span className="time">{elm.date}</span>
               </p>
               <div className="buttons">
-                <button onClick={() => handleEdit(elm.id)} style={{backgroundColor:'#778da9', color:"white", cursor:'pointer'}}>Edit</button>
+                <button onClick={() => handleEdit(elm.id)} style={{backgroundColor:'#778da9', color:"white", cursor:'pointer'}}>edit</button>
                 <button onClick={() => handleDelete(elm.id)} style={{backgroundColor:'#bc4749', color:"white", cursor:'pointer'}}>Delete</button>
               </div>
             </li>
